@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html manifest="cmf.manifest">
+<head>
+<title>Offline Web Application</title>
+<script>
+function changeImage()
+{
+document.images["jsbutton"].src= "Images/bat.jpg";
+return true;
+}
+function changeImageMore()
+{
+document.images["jsbutton"].src= "Images/dolphin.jpg";
+return true;
+}
+</script>
+</head>
+<body>
+<img name="jsbutton" src="Images/bat.jpg" width="25%" height="25%" border="0">
+<br><input type=button onclick="changeImage()" value="Lets Show bat"></input>
+&nbsp;&nbsp;<input type=button onclick="changeImageMore()" value="Lets Show dolphin"></input>
+</body>
+</html>
